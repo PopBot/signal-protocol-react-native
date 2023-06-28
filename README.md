@@ -9,16 +9,16 @@ npm install signal-protocol-react-native
 
 **VERY IMPORTANT**
 
-First, install [expo-random](https://www.npmjs.com/package/expo-random), [react-native-get-random-values](https://www.npmjs.com/package/react-native-get-random-values), [react-native-securerandom](https://www.npmjs.com/package/react-native-securerandom), [isomorphic-webcrypto](https://www.npmjs.com/package/isomorphic-webcrypto), [expo-crypto](https://www.npmjs.com/package/expo-crypto).
+First, install [react-native-get-random-values](https://www.npmjs.com/package/react-native-get-random-values), [react-native-securerandom](https://www.npmjs.com/package/react-native-securerandom), [isomorphic-webcrypto](https://www.npmjs.com/package/isomorphic-webcrypto).
 
 
 ```shell
-npm install expo-random expo-crypto isomorphic-webcrypto react-native-getrandom-values react-native-securerandom
+npm install isomorphic-webcrypto react-native-getrandom-values react-native-securerandom
 ```
 
 ### Setup
 
-**VERY IMPORTANT**: In your project's root `index.js` file, import `expo-random`, `react-native-get-random-values`, and `react-native-securerandom`.
+**VERY IMPORTANT**: In your project's root `index.js` file, import `react-native-get-random-values`, and `react-native-securerandom`.
 This allows your app to asynchronously load required modules to check secure key generation status.
 
 ```javascript
@@ -29,7 +29,6 @@ import {name as appName} from './app.json';
 // START INSERT
 import 'react-native-get-random-values';
 import 'react-native-securerandom';
-import 'expo-random';
 // END INSERT
 
 /// ...
