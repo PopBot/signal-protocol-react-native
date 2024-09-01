@@ -1,10 +1,10 @@
-var Crypto = require('./crypto.js');
+let Crypto = require('./crypto.js');
 
 function isNonNegativeInteger(n) {
     return (typeof n === 'number' && (n % 1) === 0  && n >= 0);
 }
 
-var KeyHelper = {
+let KeyHelper = {
     ensureSecure: function () {
         return Crypto.crypto.ensureSecure();
     },
@@ -20,9 +20,9 @@ var KeyHelper = {
 
     generateSignedPreKey: function (identityKeyPair, signedKeyId) {
         if (!(identityKeyPair.privKey instanceof ArrayBuffer) ||
-            identityKeyPair.privKey.byteLength != 32 ||
+            identityKeyPair.privKey.byteLength !== 32 ||
             !(identityKeyPair.pubKey instanceof ArrayBuffer) ||
-            identityKeyPair.pubKey.byteLength != 33) {
+            identityKeyPair.pubKey.byteLength !== 33) {
             throw new TypeError('Invalid argument for identityKeyPair');
         }
         if (!isNonNegativeInteger(signedKeyId)) {
