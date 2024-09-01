@@ -1,6 +1,6 @@
 var VERSION = 0;
 
-var Crypto = require('./crypto.js');
+var Crypto = require('./crypto.ts');
 var ByteBuffer = require('bytebuffer');
 
 function iterateHash(data, key, count) {

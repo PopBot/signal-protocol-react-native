@@ -11,7 +11,7 @@ if (crypto.default) {
   crypto = crypto.default;
 }
 
-var Curve = require('./Curve.js');
+var Curve = require('./Curve.ts');
 var util = require('./helpers.js');
 
 // object for this crypto.js scope

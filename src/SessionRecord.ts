@@ -2,10 +2,10 @@
  * vim: ts=4:sw=4
  */
 
-var util = require('./helpers.js');
+var util = require('./helpers.ts');
 var ByteBuffer = require('bytebuffer');
 
-var BaseKeyType = require('./BaseKeyType.js');
+var BaseKeyType = require('./BaseKeyType.ts');
 
 var ARCHIVED_STATES_MAX_LENGTH = 40;
 

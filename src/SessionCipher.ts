@@ -1,10 +1,10 @@
-var util = require('../src/helpers.js');
+var util = require('./helpers.ts');
 
 var SessionLock = require('./SessionLock.js');
 var SessionRecord = require('./SessionRecord.js');
 var SessionBuilder = require('./SessionBuilder.js');
-var Crypto = require('./crypto.js');
-var ChainType = require('./ChainType.js');
+var Crypto = require('./crypto.ts');
+var ChainType = require('./ChainType.ts');
 var protobuf = require('../build/protobufs_concat.js');
 var ByteBuffer = require('bytebuffer');
 

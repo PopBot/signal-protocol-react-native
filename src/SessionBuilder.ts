@@ -1,9 +1,9 @@
 var SessionLock = require('./SessionLock.js');
-var Crypto = require('./crypto.js');
+var Crypto = require('./crypto.ts');
 var SessionRecord = require('./SessionRecord.js');
-var ChainType = require('./ChainType.js');
-var BaseKeyType = require('./BaseKeyType.js');
-var util = require('./helpers.js');
+var ChainType = require('./ChainType.ts');
+var BaseKeyType = require('./BaseKeyType.ts');
+var util = require('./helpers.ts');
 
 function SessionBuilder(storage, remoteAddress) {
   this.remoteAddress = remoteAddress;

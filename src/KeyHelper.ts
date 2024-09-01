@@ -1,4 +1,4 @@
-let Crypto = require('./crypto.js');
+let Crypto = require('./crypto.ts');
 
 function isNonNegativeInteger(n) {
     return (typeof n === 'number' && (n % 1) === 0  && n >= 0);
