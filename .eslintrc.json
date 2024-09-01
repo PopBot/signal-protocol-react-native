@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended"
+	],
+	"plugins": [
+		"react",
+		"react-hooks"
+	],
+	"rules": {
+		"import/no-anonymous-default-export": "off",
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"no-unused-vars": "off",
+		"react/no-children-prop": "off",
+		"react/jsx-max-props-per-line": ["error", { "maximum": 1, "when": "always" }]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
