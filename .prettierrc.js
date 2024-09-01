@@ -22,5 +22,19 @@ module.exports = {
 				tabWidth: 4,
 			},
 		},
+		{
+			files: '*.ts',
+			options: {
+				parser: 'typescript',
+				tabWidth: 4,
+			}
+		},
+		{
+			files: '*.js',
+			options: {
+				parser: 'babel',
+				tabWidth: 4,
+			}
+		}
 	],
 };

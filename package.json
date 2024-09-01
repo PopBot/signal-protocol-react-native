@@ -1,21 +1,33 @@
 {
-  "name": "signal-protocol-react-native",
-  "repository": "https://github.com/PopBot/signal-protocol-react-native",
-  "description": "React Native adaptation of Signal Protocol",
-  "author": "PopBot",
-  "contributors": [
-    "PopBot"
-  ],
-  "version": "0.1.13",
-  "main": "index.js",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "isomorphic-webcrypto": "*",
-    "protobufjs": "*",
-    "react-native-securerandom": "*",
-    "path": "*",
-    "long": "*",
-    "bytebuffer": "*",
-    "react-native-fs": "*"
-  }
+    "name": "signal-protocol-react-native",
+    "repository": "https://github.com/PopBot/signal-protocol-react-native",
+    "description": "React Native TypeScript adaptation of Signal Protocol",
+    "author": "PopBot",
+    "contributors": [
+        "PopBot",
+        "dlogvin"
+    ],
+    "type": "module",
+    "version": "0.1.13",
+    "main": "index.js",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "bytebuffer": "*",
+        "isomorphic-webcrypto": "*",
+        "long": "*",
+        "path": "*",
+        "protobufjs": "^7.4.0",
+        "react-native-fs": "*",
+        "react-native-securerandom": "*"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.25.1",
+        "@babel/preset-env": "^7.25.4",
+        "@eslint/eslintrc": "^3.1.0",
+        "eslint": "^9.9.1",
+        "eslint-plugin-react": "^7.35.0",
+        "prettier": "^3.3.3",
+        "ts-lint": "^4.5.1",
+        "typescript": "^5.5.4"
+    }
 }
