@@ -1,21 +1,9 @@
-/*
- * vim: ts=4:sw=4
- */
-'use strict';
-
-
-// BROWSER POLYFILL
-var crypto = require('./node_polyfills.js').crypto;
-
-if (crypto.default) {
-  crypto = crypto.default;
-}
-
-var Curve = require('./Curve.ts');
-var util = require('./helpers.js');
+import crypto from 'isomorphic-webcrypto';
+import Curve from './Curve.js';
+import util from './helpers.js';
 
 // object for this crypto.js scope
-var myCrypto = {};
+let myCrypto = {};
 
 myCrypto.crypto = {
   ensureSecure: function(){
